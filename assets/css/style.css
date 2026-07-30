@@ -192,6 +192,11 @@ p{margin:0 0 1em}
 }
 .section--ice .chip,.section--white .chip{border-color:var(--line-light);border-left-color:var(--teal);color:var(--ink-soft);background:var(--white)}
 
+/* Grilla de logos de fabricantes */
+.tech-grid{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:28px 40px}
+.tech-grid .brand-logo{height:30px;width:auto;flex:none;display:block}
+.tech-grid .chip{align-self:center}
+
 /* Banda Microsoft Partner */
 .partner-band{
   display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:center;
