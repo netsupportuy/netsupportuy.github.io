@@ -19,7 +19,7 @@
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="index.html" aria-label="NetSupport">
-      <svg viewBox="0 0 44 44" aria-hidden="true"><defs><linearGradient id="lg29" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00B4A4"/><stop offset="1" stop-color="#0C60A8"/></linearGradient></defs><circle cx="22" cy="22" r="9.5" fill="url(#lg29)"/><ellipse cx="22" cy="22" rx="19" ry="7.5" fill="none" stroke="#00B4A4" stroke-width="1.6" transform="rotate(-24 22 22)" opacity=".9"/><ellipse cx="22" cy="22" rx="19" ry="7.5" fill="none" stroke="#7FD9D0" stroke-width="1.1" transform="rotate(28 22 22)" opacity=".55"/><circle cx="6.5" cy="15" r="2" fill="#00B4A4"/></svg><span><b>Net</b><span>Support</span></span>
+      <img src="../assets/img/logo_netsupport_fondo_oscuro.png" alt="NetSupport" style="height:40px;width:auto">
     </a>
     <button class="nav-toggle" aria-expanded="false" aria-label="Menu"><span></span><span></span><span></span></button>
     <nav class="main-nav">
@@ -45,7 +45,10 @@
       </ul>
     </div>
     <div class="form-card reveal">
-      <form id="contact-form" novalidate>
+      <form id="contact-form" method="POST" action="https://api.web3forms.com/submit" novalidate>
+        <input type="hidden" name="access_key" value="8aad9284-3d95-4cfb-bd58-00be110a4a63">
+        <input type="hidden" name="subject" value="Nueva consulta desde netsupport.com.uy">
+        <input type="checkbox" name="botcheck" style="display:none">
         <div class="form-grid">
           <div class="field"><label for="f-name">Nome</label><input id="f-name" name="name" type="text" required></div>
           <div class="field"><label for="f-company">Empresa</label><input id="f-company" name="company" type="text"></div>
@@ -66,7 +69,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a class="brand" href="index.html" aria-label="NetSupport"><svg viewBox="0 0 44 44" aria-hidden="true"><defs><linearGradient id="lg30" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00B4A4"/><stop offset="1" stop-color="#0C60A8"/></linearGradient></defs><circle cx="22" cy="22" r="9.5" fill="url(#lg30)"/><ellipse cx="22" cy="22" rx="19" ry="7.5" fill="none" stroke="#00B4A4" stroke-width="1.6" transform="rotate(-24 22 22)" opacity=".9"/><ellipse cx="22" cy="22" rx="19" ry="7.5" fill="none" stroke="#7FD9D0" stroke-width="1.1" transform="rotate(28 22 22)" opacity=".55"/><circle cx="6.5" cy="15" r="2" fill="#00B4A4"/></svg><span><b>Net</b><span>Support</span></span></a>
+        <a class="brand" href="index.html" aria-label="NetSupport"><img src="../assets/img/logo_netsupport_fondo_oscuro.png" alt="NetSupport" style="height:40px;width:auto"></a>
         <p>Parceiros estratégicos em tecnologia. Acompanhando empresas do Uruguai e da região desde 1998.</p>
         <div class="social">
           <a href="https://www.linkedin.com/company/netsupport-uy" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5A2.49 2.49 0 1 1 5 8.48a2.49 2.49 0 0 1-.02-4.98zM3 9.75h4v11H3zM9.5 9.75h3.8v1.5h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1v5.45h-4v-4.83c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.9h-3.95z"/></svg></a>

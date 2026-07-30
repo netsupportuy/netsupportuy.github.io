@@ -24,16 +24,57 @@
     items.forEach(function (el) { el.classList.add('in'); });
   }
 
-  // Formulario de contacto — modo demostración.
-  // En producción este submit hace POST al flujo de Power Automate
-  // que crea el lead en Dynamics 365 y notifica por Teams.
+  // Formulario de contacto — envío real vía Web3Forms.
   var form = document.getElementById('contact-form');
   if (form) {
+    var ok = document.getElementById('form-ok');
+    var err = document.getElementById('form-error');
+    if (!err) {
+      err = document.createElement('div');
+      err.id = 'form-error';
+      err.className = 'form-ok';
+      err.style.background = '#FDECEC';
+      err.style.borderColor = '#E5484D';
+      err.style.color = '#8C1B1B';
+      if (ok) ok.insertAdjacentElement('afterend', err);
+      else form.appendChild(err);
+    }
+    var errorText = {
+      es: 'No pudimos enviar tu consulta. Probá nuevamente o escribinos a info@netsupport.com.uy.',
+      en: "We couldn't send your inquiry. Please try again or email us at info@netsupport.com.uy.",
+      pt: 'Não conseguimos enviar sua consulta. Tente novamente ou escreva para info@netsupport.com.uy.'
+    };
+    var lang = (document.documentElement.lang || 'es').slice(0, 2).toLowerCase();
+    var message = errorText[lang] || errorText.es;
+
     form.addEventListener('submit', function (ev) {
       ev.preventDefault();
-      var ok = document.getElementById('form-ok');
-      if (ok) ok.classList.add('show');
-      form.querySelector('button[type="submit"]').disabled = true;
+      var submitBtn = form.querySelector('button[type="submit"]');
+      if (ok) ok.classList.remove('show');
+      err.classList.remove('show');
+      if (submitBtn) submitBtn.disabled = true;
+
+      fetch(form.action, {
+        method: 'POST',
+        headers: { Accept: 'application/json' },
+        body: new FormData(form)
+      })
+        .then(function (res) { return res.json(); })
+        .then(function (data) {
+          if (data && data.success) {
+            if (ok) ok.classList.add('show');
+            form.reset();
+          } else {
+            err.textContent = message;
+            err.classList.add('show');
+            if (submitBtn) submitBtn.disabled = false;
+          }
+        })
+        .catch(function () {
+          err.textContent = message;
+          err.classList.add('show');
+          if (submitBtn) submitBtn.disabled = false;
+        });
     });
   }
 
