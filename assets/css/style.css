@@ -193,15 +193,10 @@ p{margin:0 0 1em}
 .section--ice .chip,.section--white .chip{border-color:var(--line-light);border-left-color:var(--teal);color:var(--ink-soft);background:var(--white)}
 
 /* Grilla de logos de fabricantes */
-.tech-grid{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:28px 40px}
-.tech-grid .brand-logo{height:30px;width:auto;flex:none;display:block;opacity:.7;transition:opacity .25s ease}
-.tech-grid .brand-logo:hover{opacity:1}
+.tech-grid{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:30px 48px}
+.tech-grid .brand-logo{height:38px;width:auto;flex:none;display:block;filter:grayscale(1);opacity:.6;transition:opacity .25s ease,filter .25s ease}
+.tech-grid .brand-logo:hover{filter:grayscale(0);opacity:1}
 .tech-grid .chip{align-self:center}
-.brand-wordmark{
-  font-family:var(--font-display);font-weight:700;font-size:1.5rem;line-height:30px;
-  color:#D6E2F2;opacity:.7;transition:opacity .25s ease;flex:none;
-}
-.brand-wordmark:hover{opacity:1}
 
 /* Cinta de logos de clientes */
 .client-marquee{
@@ -211,8 +206,8 @@ p{margin:0 0 1em}
 }
 .client-marquee-track{display:flex;width:max-content;animation:client-scroll 40s linear infinite}
 .client-marquee:hover .client-marquee-track{animation-play-state:paused}
-.client-marquee-group{display:flex;align-items:center;gap:44px;padding-right:44px;flex:none}
-.client-logo{height:40px;width:auto;flex:none;filter:grayscale(1);opacity:.6;transition:opacity .25s ease,filter .25s ease}
+.client-marquee-group{display:flex;align-items:center;gap:56px;padding-right:56px;flex:none}
+.client-logo{height:64px;width:auto;flex:none;filter:grayscale(1);opacity:.7;transition:opacity .25s ease,filter .25s ease}
 .client-logo:hover{filter:grayscale(0);opacity:1}
 @keyframes client-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media (prefers-reduced-motion: reduce){
@@ -303,8 +298,11 @@ p{margin:0 0 1em}
 .footer-bottom .ms{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.1em}
 
 /* Página interior: hero corto */
-.page-hero{background:linear-gradient(160deg,var(--navy-deep),var(--navy) 70%);color:var(--white);padding:78px 0 64px}
+.page-hero{background:linear-gradient(160deg,var(--navy-deep),var(--navy) 70%);background-size:cover;background-position:center;color:var(--white);padding:78px 0 64px}
 .page-hero p{max-width:640px;color:var(--mist);font-size:1.08rem;margin:0}
+
+/* Foto destacada de equipo */
+.team-photo{width:100%;height:auto;border-radius:var(--radius);box-shadow:var(--shadow);display:block;object-fit:cover}
 
 /* Reveal on scroll */
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
