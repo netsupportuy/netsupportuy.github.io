@@ -194,8 +194,32 @@ p{margin:0 0 1em}
 
 /* Grilla de logos de fabricantes */
 .tech-grid{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:28px 40px}
-.tech-grid .brand-logo{height:30px;width:auto;flex:none;display:block}
+.tech-grid .brand-logo{height:30px;width:auto;flex:none;display:block;opacity:.7;transition:opacity .25s ease}
+.tech-grid .brand-logo:hover{opacity:1}
 .tech-grid .chip{align-self:center}
+.brand-wordmark{
+  font-family:var(--font-display);font-weight:700;font-size:1.5rem;line-height:30px;
+  color:#D6E2F2;opacity:.7;transition:opacity .25s ease;flex:none;
+}
+.brand-wordmark:hover{opacity:1}
+
+/* Cinta de logos de clientes */
+.client-marquee{
+  overflow:hidden;margin-top:26px;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+}
+.client-marquee-track{display:flex;width:max-content;animation:client-scroll 40s linear infinite}
+.client-marquee:hover .client-marquee-track{animation-play-state:paused}
+.client-marquee-group{display:flex;align-items:center;gap:44px;padding-right:44px;flex:none}
+.client-logo{height:40px;width:auto;flex:none;filter:grayscale(1);opacity:.6;transition:opacity .25s ease,filter .25s ease}
+.client-logo:hover{filter:grayscale(0);opacity:1}
+@keyframes client-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion: reduce){
+  .client-marquee{-webkit-mask-image:none;mask-image:none}
+  .client-marquee-track{animation:none;flex-wrap:wrap;width:auto;justify-content:center}
+  .client-marquee-group:nth-of-type(2){display:none}
+}
 
 /* Banda Microsoft Partner */
 .partner-band{
