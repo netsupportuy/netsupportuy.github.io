@@ -12,20 +12,25 @@ Todas las fotos provienen de Unsplash o Pexels, bajo sus licencias gratuitas de 
 | `hands-code.jpg` / `hands-code.webp` | [Unsplash](https://unsplash.com/photos/hands-typing-on-a-laptop-with-code-on-screen-Bn4L8oSTIjc) | Rahul Mishra | Unsplash License |
 | `hands-keyboard.jpg` / `hands-keyboard.webp` | [Pexels](https://www.pexels.com/photo/close-up-view-of-typing-on-laptop-keyboard-12899130/) | Mizuno K | Pexels License |
 | `dev-screens.jpg` / `dev-screens.webp` | [Unsplash](https://unsplash.com/photos/code-displayed-on-computer-screens-v-jFS1AsHXo) | Jakub Żerdzicki | Unsplash License |
+| `hero-team-screen.jpg` / `hero-team-screen.webp` | [Pexels](https://www.pexels.com/photo/young-professionals-working-with-computers-7988745/) | Mikhail Nilov | Pexels License |
+| `hero-alt-1.jpg` / `hero-alt-1.webp` | [Pexels](https://www.pexels.com/photo/men-looking-at-the-code-on-the-board-7988747/) | Mikhail Nilov | Pexels License |
+| `hero-alt-2.jpg` / `hero-alt-2.webp` | [Pexels](https://www.pexels.com/photo/7988752/) | Mikhail Nilov | Pexels License |
+| `hero-alt-3.jpg` / `hero-alt-3.webp` | [Pexels](https://www.pexels.com/photo/7988742/) | Mikhail Nilov | Pexels License |
 | `hero-network-blue.jpg` / `hero-network-blue.webp` | [Pexels](https://www.pexels.com/photo/network-rack-17323801/) | panumas nikhomkhai | Pexels License |
 | `hero-server-teal.jpg` / `hero-server-teal.webp` | [Pexels](https://www.pexels.com/photo/data-center-server-racks-with-active-equipment-37730212/) | panumas nikhomkhai | Pexels License |
 | `hero-city-night.jpg` / `hero-city-night.webp` | [Unsplash](https://unsplash.com/photos/cityscape-at-night-with-glowing-buildings-and-traffic-6zUdG9TbSfY) | Aleksandr Popov | Unsplash License |
 | `contact-headset.jpg` / `contact-headset.webp` | [Pexels](https://www.pexels.com/photo/photo-of-a-woman-in-a-black-and-white-blazer-wearing-a-black-headset-7709294/) | MART PRODUCTION | Pexels License |
+| `contact-support.jpg` / `contact-support.webp` | [Pexels](https://www.pexels.com/photo/side-view-of-a-woman-using-laptop-7964513/) | Felicity Tai | Pexels License |
 
 ## Uso en el sitio
 
-- **Hero de la home** (ES/EN/PT): `hero-network-blue` — sala de servidores/red en tonos azules, elegida por su afinidad directa con la paleta marino/teal del sitio.
-  - Alternativas disponibles en `assets/img/photos/` por si se prefiere cambiar: `hero-server-teal` (primer plano de blade de servidor, tonos verde-azulado) y `hero-city-night` (ciudad de noche).
+- **Hero de la home** (ES/EN/PT): `hero-team-screen` — dos personas reales colaborando frente a un monitor con código, foto de fondo a ancho completo con overlay direccional (denso a la izquierda, donde vive el texto; liviano a la derecha, sobre la foto). Tonos fríos de oficina, nadie mira a cámara.
+  - Alternativas guardadas en `assets/img/photos/` (mismo criterio de dirección de arte, no usadas actualmente): `hero-alt-1` (dos personas de espaldas ante una pantalla de pared con código), `hero-alt-2` (dos hombres en un escritorio, mismo shoot que la elegida), `hero-alt-3` (dos hombres de espaldas ante monitores, con una segunda pantalla de fondo).
 - **Hero de Servicios** (ES/EN/PT): `server-racks`
 - **Hero de Quiénes somos** (ES/EN/PT): `office`
 - **Hero de Novedades** (ES/EN/PT): `dev-screens`
-- **Hero de Contacto** (ES/EN/PT): `contact-headset` — mujer con auriculares de soporte/atención, reemplaza a `team-screens`.
+- **Hero de Contacto** (ES/EN/PT): `contact-support` — mujer trabajando en laptop, posicionada a la izquierda del cuadro (con un compañero desenfocado a la derecha), tonos fríos de oficina. Reemplaza a `contact-headset`, que tenía el sujeto centro-derecha y quedaba tapado por el formulario.
 - **Foto destacada, sección "Nuestro equipo"** (Quiénes somos, ES/EN/PT): `team-collab`
-- `team-screens`, `server-black`, `hands-code` y `hands-keyboard` quedan disponibles en `assets/img/photos/` pero no están asignadas a ninguna sección actualmente.
+- `team-screens`, `contact-headset`, `server-black`, `hands-code`, `hands-keyboard`, `hero-network-blue`, `hero-server-teal` y `hero-city-night` quedan disponibles en `assets/img/photos/` pero no están asignadas a ninguna sección actualmente.
 
-Todas las imágenes se descargaron directamente desde el CDN de origen (Unsplash/Pexels) en 1200–1600px de ancho máximo, calidad 80, en formato JPEG y WebP nativo (sin recompresión local adicional).
+Todas las imágenes se descargaron directamente desde el CDN de origen (Unsplash/Pexels) en 1200–1920px de ancho máximo, calidad 75–80, en formato JPEG y WebP nativo (sin recompresión local adicional).
