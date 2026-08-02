@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="220" viewBox="0 0 220 220">
+  <g fill="none" stroke="#00B4A4" stroke-width="1">
+    <path d="M18 24 L64 52 L112 20 L168 58 L204 30" stroke-opacity=".08"/>
+    <path d="M64 52 L48 108 L96 132 L112 20" stroke-opacity=".08"/>
+    <path d="M96 132 L150 158 L168 58" stroke-opacity=".08"/>
+    <path d="M48 108 L12 168 L60 206 L96 132" stroke-opacity=".08"/>
+    <path d="M150 158 L188 196 L60 206" stroke-opacity=".08"/>
+    <path d="M168 58 L206 96 L188 196" stroke-opacity=".08"/>
+  </g>
+  <g fill="#00B4A4">
+    <circle cx="18" cy="24" r="2.6" fill-opacity=".14"/>
+    <circle cx="64" cy="52" r="2.6" fill-opacity=".14"/>
+    <circle cx="112" cy="20" r="2.6" fill-opacity=".14"/>
+    <circle cx="168" cy="58" r="2.6" fill-opacity=".14"/>
+    <circle cx="204" cy="30" r="2.6" fill-opacity=".14"/>
+    <circle cx="48" cy="108" r="2.6" fill-opacity=".14"/>
+    <circle cx="96" cy="132" r="2.6" fill-opacity=".14"/>
+    <circle cx="150" cy="158" r="2.6" fill-opacity=".14"/>
+    <circle cx="12" cy="168" r="2.6" fill-opacity=".14"/>
+    <circle cx="60" cy="206" r="2.6" fill-opacity=".14"/>
+    <circle cx="188" cy="196" r="2.6" fill-opacity=".14"/>
+    <circle cx="206" cy="96" r="2.6" fill-opacity=".14"/>
+  </g>
+</svg>

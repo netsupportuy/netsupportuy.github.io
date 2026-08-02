@@ -6,7 +6,6 @@ Todas las fotos provienen de Unsplash o Pexels, bajo sus licencias gratuitas de 
 |---|---|---|---|
 | `office.jpg` / `office.webp` | [Unsplash](https://unsplash.com/photos/modern-office-space-with-glass-walls-and-light-decor-wlHBYkK2y4k) | Deliberate Directions | Unsplash License |
 | `team-screens.jpg` / `team-screens.webp` | [Unsplash](https://unsplash.com/photos/two-men-looking-intently-at-a-computer-screen-E8pqwxaS6ko) | litoon dev | Unsplash License |
-| `team-collab.jpg` / `team-collab.webp` | [Unsplash](https://unsplash.com/photos/team-collaborating-around-a-computer-in-an-office-UikYLDQj9_I) | Vitaly Gariev | Unsplash License |
 | `server-racks.jpg` / `server-racks.webp` | [Pexels](https://www.pexels.com/photo/server-racks-on-data-center-5480781/) | Brett Sayles | Pexels License |
 | `server-black.jpg` / `server-black.webp` | [Pexels](https://www.pexels.com/photo/black-hardwares-on-data-server-room-4597280/) | Brett Sayles | Pexels License |
 | `hands-code.jpg` / `hands-code.webp` | [Unsplash](https://unsplash.com/photos/hands-typing-on-a-laptop-with-code-on-screen-Bn4L8oSTIjc) | Rahul Mishra | Unsplash License |
@@ -30,7 +29,7 @@ Todas las fotos provienen de Unsplash o Pexels, bajo sus licencias gratuitas de 
 - **Hero de Quiénes somos** (ES/EN/PT): `office`
 - **Hero de Novedades** (ES/EN/PT): `dev-screens`
 - **Hero de Contacto** (ES/EN/PT): `contact-active` — mujer al teléfono, gesticulando y conversando activamente (no contemplativa), posicionada en el tercio izquierdo del cuadro (despejada del formulario), tonos fríos (vidrio, skyline urbano). Reemplaza a `contact-profile`, que aunque cumplía el criterio regional y de encuadre, se veía pasiva/contemplativa (mirando la pantalla en silencio) en vez de activa.
-- **Foto destacada, sección "Nuestro equipo"** (Quiénes somos, ES/EN/PT): `team-collab` — revisada en la pasada anterior de dirección de arte; el grupo (rasgos predominantemente europeos/mediterráneos) se considera plausible para una empresa rioplatense dada la fuerte ascendencia italiana/española de la población uruguaya, así que se mantiene sin cambios.
+- **Sección "Nuestro equipo"** (Quiénes somos, ES/EN/PT): a pedido del dueño, se quitó la foto destacada (`team-collab`) — la sección ahora queda solo con texto y las 4 tarjetas. El archivo `team-collab.jpg`/`.webp` se eliminó del repositorio por no usarse en ningún otro lado.
 - `team-screens`, `contact-headset`, `contact-profile`, `server-black`, `hands-code`, `hands-keyboard`, `hero-network-blue`, `hero-server-teal` y `hero-city-night` quedan disponibles en `assets/img/photos/` pero no están asignadas a ninguna sección actualmente.
 - **Retiradas en esta pasada** (no encajaban con la nueva dirección "equipo en datacenter" o se veían pasivas): `hero-team-latam` + el shoot de `hero-alt-1/2/3` anterior (oficina genérica, no datacenter).
 

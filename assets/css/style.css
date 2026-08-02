@@ -238,14 +238,37 @@ p{margin:0 0 1em}
   flex:none;filter:grayscale(1);opacity:.7;transition:opacity .25s ease,filter .25s ease;
 }
 .client-logo:hover{filter:grayscale(0);opacity:1}
-/* Ajuste individual de peso visual */
-.client-logo[alt="Dambo"]{max-height:32px}
-.client-logo[alt="Cibeles"]{max-height:52px}
-.client-logo[alt="Allie"]{max-height:52px}
-.client-logo[alt="Starcenter"]{max-height:52px}
-.client-logo[alt="Piece of Cake"]{max-height:50px}
-.client-logo[alt="Daniel Cassin"]{max-height:48px}
-.client-logo[alt="La Ópera"]{max-height:48px}
+/* Ajuste individual: alto aparente de letra uniforme en toda la cinta */
+.client-logo[alt="Acher"]{max-height:31px}
+.client-logo[alt="Acodike Supergas"]{max-height:36px}
+.client-logo[alt="ADA"]{max-height:48px}
+.client-logo[alt="Allie"]{max-height:36px}
+.client-logo[alt="Alpino"]{max-height:51px}
+.client-logo[alt="Andersen"]{max-width:100px}
+.client-logo[alt="Arocena, Arocena & Asociados"]{max-width:175px}
+.client-logo[alt="Axion Energy"]{max-height:33px}
+.client-logo[alt="Bergstein"]{max-height:48px}
+.client-logo[alt="Brocos"]{max-height:41px}
+.client-logo[alt="Castro Ltda"]{max-height:28px}
+.client-logo[alt="Cibeles"]{max-height:48px}
+.client-logo[alt="Dambo"]{max-width:70px}
+.client-logo[alt="Damiani"]{max-height:54px}
+.client-logo[alt="Daniel Cassin"]{max-height:64px}
+.client-logo[alt="Deceleste"]{max-height:56px}
+.client-logo[alt="Farmalog"]{max-height:48px}
+.client-logo[alt="Fortylex"]{max-height:42px}
+.client-logo[alt="La Ópera"]{max-height:66px}
+.client-logo[alt="Larrique"]{max-height:60px}
+.client-logo[alt="Mayor"]{max-height:53px}
+.client-logo[alt="Pharmabax"]{max-width:100px}
+.client-logo[alt="Piece of Cake"]{max-height:46px}
+.client-logo[alt="Plaza"]{max-height:54px}
+.client-logo[alt="PPE Abogados"]{max-height:27px}
+.client-logo[alt="Puma"]{max-height:36px}
+.client-logo[alt="Sammel"]{max-width:110px}
+.client-logo[alt="Sebamar"]{max-height:63px}
+.client-logo[alt="Starcenter"]{max-height:78px}
+.client-logo[alt="Tele"]{max-height:68px}
 @keyframes client-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media (prefers-reduced-motion: reduce){
   .client-marquee{-webkit-mask-image:none;mask-image:none}
@@ -338,9 +361,6 @@ p{margin:0 0 1em}
 /* Página interior: hero corto */
 .page-hero{background:linear-gradient(160deg,var(--navy-deep),var(--navy) 70%);background-size:cover;background-position:center;color:var(--white);padding:78px 0 64px}
 .page-hero p{max-width:640px;color:var(--mist);font-size:1.08rem;margin:0}
-
-/* Foto destacada de equipo */
-.team-photo{width:100%;height:auto;border-radius:var(--radius);box-shadow:var(--shadow);display:block;object-fit:cover}
 
 /* Reveal on scroll */
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
