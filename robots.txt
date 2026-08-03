@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://netsupport.com.uy/sitemap.xml
