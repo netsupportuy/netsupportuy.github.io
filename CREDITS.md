@@ -24,10 +24,9 @@ Todas las fotos provienen de Unsplash o Pexels, bajo sus licencias gratuitas de 
 
 ## Uso en el sitio
 
-- **Hero de la home** (ES/EN/PT): `hero-abstract` — imagen abstracta de estelas de luz azul/verde sobre un fondo de circuitos/servidores, sin personas, sin marcas. Elegida por el dueño entre las 8 opciones de `/hero-preview.html` (Opción 3). Tonos fríos intensos, muy compatibles con la paleta marino/teal; contraste de texto verificado sobre el overlay direccional en desktop y mobile.
+- **Hero de la home** (ES/EN/PT): `hero-abstract` — imagen abstracta de estelas de luz azul/verde sobre un fondo de circuitos/servidores, sin personas, sin marcas. Elegida por el dueño entre las 8 opciones que se mostraron en una página de preview interna (ya eliminada, junto con `assets/img/photos/candidates/`, una vez cumplida su función). Tonos fríos intensos, muy compatibles con la paleta marino/teal; contraste de texto verificado sobre el overlay direccional en desktop y mobile.
   - `hero-datacenter` (técnico de espaldas tipeando frente a un rack iluminado) fue la elección de la pasada anterior; queda disponible sin usar.
   - Alternativas guardadas en `assets/img/photos/` (dirección "datacenter", no usadas actualmente): `hero-alt-1` (manos insertando un módulo de circuito en un chasis, sin rostro), `hero-alt-2` (manos conectando cables de fibra óptica en un patch panel, sin rostro), `hero-alt-3` (técnico de perfil conectando cables en un rack — **nota**: esta última tiene un rostro parcialmente visible de tez trigueña, plausible como rioplatense, pero el switch de red tiene una marca tenue en relieve apenas legible; al ser solo una alternativa no publicada, se dejó igual, pero si en el futuro se promueve a foto principal convendría recortar o desenfocar esa zona).
-  - Las otras 3 opciones descartadas del preview (datacenter alterno, Montevideo/Palacio Salvo, manos+código, equipo de espaldas, sala NOC) quedan en `assets/img/photos/candidates/` únicamente para referencia de `/hero-preview.html`, no como alternativas activas del hero real.
 - **Hero de Servicios** (ES/EN/PT): `server-racks`
 - **Hero de Quiénes somos** (ES/EN/PT): `office`
 - **Hero de Novedades** (ES/EN/PT): `dev-screens`
